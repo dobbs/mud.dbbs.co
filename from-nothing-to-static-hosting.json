@@ -155,7 +155,7 @@
       "text": "When I configured the CNAME in GitHub, a commit was added to the repo up in the cloud. I needed to synchronize the local repo with that change."
     },
     {
-      "type": "factory",
+      "type": "code",
       "id": "4515a847bd270e97",
       "text": "git pull"
     },
@@ -676,6 +676,26 @@
         "ac403884d47936d2"
       ],
       "date": 1643990167784
+    },
+    {
+      "type": "edit",
+      "id": "4515a847bd270e97",
+      "item": {
+        "type": "code",
+        "id": "4515a847bd270e97",
+        "text": "  git pull"
+      },
+      "date": 1644011127996
+    },
+    {
+      "type": "edit",
+      "id": "4515a847bd270e97",
+      "item": {
+        "type": "code",
+        "id": "4515a847bd270e97",
+        "text": "git pull"
+      },
+      "date": 1644011132007
     }
   ]
 }
