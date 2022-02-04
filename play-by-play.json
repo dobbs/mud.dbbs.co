@@ -1,0 +1,190 @@
+{
+  "title": "Play-by-Play",
+  "story": [
+    {
+      "type": "paragraph",
+      "id": "b56b354304a2cbf5",
+      "text": "Visited [http://mud.localhost http://mud.localhost]."
+    },
+    {
+      "type": "paragraph",
+      "id": "0b2cc53853445280",
+      "text": "(Reveals that I already have an operational local farm.)"
+    },
+    {
+      "type": "paragraph",
+      "id": "08d75fdd46dddb19",
+      "text": "Found my way to [[About Flagmatic Plugin]]."
+    },
+    {
+      "type": "paragraph",
+      "id": "349dd72d9c525c62",
+      "text": "Chose a muddy sort of flag for this site."
+    },
+    {
+      "type": "reference",
+      "id": "a0c55d123946d3a7",
+      "text": "Dragged Ward's page to my browser tab and claimed a copy of my own.",
+      "site": "ward.mud.asia.wiki.org",
+      "slug": "muddy-thinking",
+      "title": "Muddy Thinking"
+    },
+    {
+      "type": "paragraph",
+      "id": "0469748252c21aa8",
+      "text": "Added the page about me so other participants can discover which parts of this exploration I contribute."
+    }
+  ],
+  "journal": [
+    {
+      "type": "create",
+      "item": {
+        "title": "Play-by-Play",
+        "story": []
+      },
+      "date": 1643985493380
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "b56b354304a2cbf5"
+      },
+      "id": "b56b354304a2cbf5",
+      "type": "add",
+      "date": 1643985494837
+    },
+    {
+      "type": "edit",
+      "id": "b56b354304a2cbf5",
+      "item": {
+        "type": "paragraph",
+        "id": "b56b354304a2cbf5",
+        "text": "First step was visiting [http://mud.localhost http://mud.localhost]."
+      },
+      "date": 1643985529341
+    },
+    {
+      "type": "add",
+      "id": "0b2cc53853445280",
+      "item": {
+        "type": "paragraph",
+        "id": "0b2cc53853445280",
+        "text": "(Reveals that I already have an operational local farm.)"
+      },
+      "after": "b56b354304a2cbf5",
+      "date": 1643985552937
+    },
+    {
+      "type": "edit",
+      "id": "b56b354304a2cbf5",
+      "item": {
+        "type": "paragraph",
+        "id": "b56b354304a2cbf5",
+        "text": "Visited [http://mud.localhost http://mud.localhost]."
+      },
+      "date": 1643985572199
+    },
+    {
+      "type": "add",
+      "id": "08d75fdd46dddb19",
+      "item": {
+        "type": "paragraph",
+        "id": "08d75fdd46dddb19",
+        "text": "Find my way to [[About Flagmatic Plugin]]."
+      },
+      "after": "0b2cc53853445280",
+      "date": 1643985599773
+    },
+    {
+      "type": "edit",
+      "id": "08d75fdd46dddb19",
+      "item": {
+        "type": "paragraph",
+        "id": "08d75fdd46dddb19",
+        "text": "Found my way to [[About Flagmatic Plugin]]."
+      },
+      "date": 1643985604554
+    },
+    {
+      "type": "add",
+      "id": "349dd72d9c525c62",
+      "item": {
+        "type": "paragraph",
+        "id": "349dd72d9c525c62",
+        "text": "Chose a muddy sort of flag for this site."
+      },
+      "after": "08d75fdd46dddb19",
+      "date": 1643985765312
+    },
+    {
+      "type": "add",
+      "id": "a0c55d123946d3a7",
+      "item": {
+        "type": "paragraph",
+        "id": "a0c55d123946d3a7",
+        "text": "Dragged Ward's Muddy Thinking page to my browser tab and claimed it for my own."
+      },
+      "after": "349dd72d9c525c62",
+      "date": 1643985812114
+    },
+    {
+      "type": "edit",
+      "id": "a0c55d123946d3a7",
+      "item": {
+        "type": "reference",
+        "id": "a0c55d123946d3a7",
+        "text": "Here we list pages where we resolve issues that seem muddy at first glance. Fork this page and add what you would like to discuss. Be nice if you would like to be forked back.",
+        "site": "ward.mud.asia.wiki.org",
+        "slug": "muddy-thinking",
+        "title": "Muddy Thinking"
+      },
+      "date": 1643985844135
+    },
+    {
+      "type": "edit",
+      "id": "a0c55d123946d3a7",
+      "item": {
+        "type": "reference",
+        "id": "a0c55d123946d3a7",
+        "text": "Dragged Ward's Muddy Thinking page to my browser tab and claimed it for my own.",
+        "site": "ward.mud.asia.wiki.org",
+        "slug": "muddy-thinking",
+        "title": "Muddy Thinking"
+      },
+      "date": 1643985855146
+    },
+    {
+      "type": "edit",
+      "id": "a0c55d123946d3a7",
+      "item": {
+        "type": "reference",
+        "id": "a0c55d123946d3a7",
+        "text": "Dragged Ward's page to my browser tab and claimed a copy of my own.",
+        "site": "ward.mud.asia.wiki.org",
+        "slug": "muddy-thinking",
+        "title": "Muddy Thinking"
+      },
+      "date": 1643985874117
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "0469748252c21aa8"
+      },
+      "id": "0469748252c21aa8",
+      "type": "add",
+      "after": "a0c55d123946d3a7",
+      "date": 1643986164378
+    },
+    {
+      "type": "edit",
+      "id": "0469748252c21aa8",
+      "item": {
+        "type": "paragraph",
+        "id": "0469748252c21aa8",
+        "text": "Added the page about me so other participants can discover which parts of this exploration I contribute."
+      },
+      "date": 1643986264215
+    }
+  ]
+}

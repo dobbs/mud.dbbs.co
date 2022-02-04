@@ -1,0 +1,91 @@
+{
+  "title": "Eric Dobbs",
+  "story": [
+    {
+      "type": "paragraph",
+      "id": "5e3aeccb09472355",
+      "text": "A federated wiki programmer and enthusiast. In this wiki, we're very interested to see an impromptu pod appear as a way of collaboratively showing what wiki does differently."
+    },
+    {
+      "type": "paragraph",
+      "id": "e5b99fda45f0d271",
+      "text": "Learn more about me from my other wikis."
+    },
+    {
+      "type": "roster",
+      "id": "4334787c06ace6d6",
+      "text": "ROSTER wiki.dbbs.co/eric-dobbs"
+    }
+  ],
+  "journal": [
+    {
+      "type": "create",
+      "item": {
+        "title": "Eric Dobbs",
+        "story": []
+      },
+      "date": 1643985933650
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "5e3aeccb09472355"
+      },
+      "id": "5e3aeccb09472355",
+      "type": "add",
+      "date": 1643985936381
+    },
+    {
+      "type": "edit",
+      "id": "5e3aeccb09472355",
+      "item": {
+        "type": "paragraph",
+        "id": "5e3aeccb09472355",
+        "text": "A federated wiki programmer and enthusiast."
+      },
+      "date": 1643985973297
+    },
+    {
+      "type": "add",
+      "id": "e5b99fda45f0d271",
+      "item": {
+        "type": "paragraph",
+        "id": "e5b99fda45f0d271",
+        "text": "Learn more about me from my other wikis."
+      },
+      "after": "5e3aeccb09472355",
+      "date": 1643985992946
+    },
+    {
+      "type": "add",
+      "id": "4334787c06ace6d6",
+      "item": {
+        "type": "factory",
+        "id": "4334787c06ace6d6",
+        "text": "ROSTER"
+      },
+      "after": "e5b99fda45f0d271",
+      "date": 1643985994729
+    },
+    {
+      "type": "edit",
+      "id": "4334787c06ace6d6",
+      "item": {
+        "type": "roster",
+        "id": "4334787c06ace6d6",
+        "text": "ROSTER wiki.dbbs.co/eric-dobbs"
+      },
+      "date": 1643986005422
+    },
+    {
+      "type": "edit",
+      "id": "5e3aeccb09472355",
+      "item": {
+        "type": "paragraph",
+        "id": "5e3aeccb09472355",
+        "text": "A federated wiki programmer and enthusiast. In this wiki, we're very interested to see an impromptu pod appear as a way of collaboratively showing what wiki does differently."
+      },
+      "date": 1643986145157
+    }
+  ]
+}

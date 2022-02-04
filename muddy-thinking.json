@@ -1,0 +1,111 @@
+{
+  "title": "Muddy Thinking",
+  "story": [
+    {
+      "type": "paragraph",
+      "id": "89eb4147a365cfb4",
+      "text": "Here we list pages where we resolve issues that seem muddy at first glance. Fork this page and add what you would like to discuss. Be nice if you would like to be forked back."
+    },
+    {
+      "type": "paragraph",
+      "id": "7758632f52316eed",
+      "text": "[[Field Guide to the Federation]]"
+    },
+    {
+      "type": "paragraph",
+      "id": "c77a7ff4ce62ec8c",
+      "text": "[[Seeing Changes]]"
+    },
+    {
+      "type": "paragraph",
+      "id": "2793a28e4aedc2bc",
+      "text": "[[Why Mud Wrestling]]"
+    }
+  ],
+  "journal": [
+    {
+      "type": "create",
+      "item": {
+        "title": "Muddy Thinking",
+        "story": []
+      },
+      "date": 1643908699023
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "89eb4147a365cfb4"
+      },
+      "id": "89eb4147a365cfb4",
+      "type": "add",
+      "date": 1643908704847
+    },
+    {
+      "type": "edit",
+      "id": "89eb4147a365cfb4",
+      "item": {
+        "type": "paragraph",
+        "id": "89eb4147a365cfb4",
+        "text": "Here we list pages where we resolve issues that seem muddy at first glance. Fork this page and add what you would like to discuss. Be nice if you would like to be forked back."
+      },
+      "date": 1643908815655
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "c77a7ff4ce62ec8c"
+      },
+      "id": "c77a7ff4ce62ec8c",
+      "type": "add",
+      "after": "89eb4147a365cfb4",
+      "date": 1643908817896
+    },
+    {
+      "type": "edit",
+      "id": "c77a7ff4ce62ec8c",
+      "item": {
+        "type": "paragraph",
+        "id": "c77a7ff4ce62ec8c",
+        "text": "[[Seeing Changes]]"
+      },
+      "date": 1643908847728
+    },
+    {
+      "type": "add",
+      "id": "7758632f52316eed",
+      "item": {
+        "type": "paragraph",
+        "id": "7758632f52316eed",
+        "text": "[[Field Guide to the Federation]]"
+      },
+      "after": "c77a7ff4ce62ec8c",
+      "date": 1643909998417
+    },
+    {
+      "id": "7758632f52316eed",
+      "type": "move",
+      "order": [
+        "89eb4147a365cfb4",
+        "7758632f52316eed",
+        "c77a7ff4ce62ec8c"
+      ],
+      "date": 1643910001493
+    },
+    {
+      "type": "add",
+      "id": "2793a28e4aedc2bc",
+      "item": {
+        "type": "paragraph",
+        "id": "2793a28e4aedc2bc",
+        "text": "[[Why Mud Wrestling]]"
+      },
+      "after": "c77a7ff4ce62ec8c",
+      "date": 1643910293675
+    },
+    {
+      "type": "fork",
+      "site": "ward.mud.asia.wiki.org",
+      "date": 1643985814561
+    }
+  ]
+}
