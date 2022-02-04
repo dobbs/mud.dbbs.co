@@ -29,6 +29,36 @@
     {
       "type": "markdown",
       "id": "770c93d3d1da9cdf",
+      "text": "# Double Check\n"
+    },
+    {
+      "type": "paragraph",
+      "id": "e88a1af1807c2081",
+      "text": "We preview the static site locally before publishing."
+    },
+    {
+      "type": "code",
+      "id": "dfb1277349c4bdb4",
+      "text": "npx http-server ."
+    },
+    {
+      "type": "paragraph",
+      "id": "4b6d24e09de34f9f",
+      "text": "Visit [http://localhost:8080 http://localhost:8080]."
+    },
+    {
+      "type": "paragraph",
+      "id": "a6b5f4248c1d106d",
+      "text": "Type ctrl-c to exit the http-server."
+    },
+    {
+      "type": "paragraph",
+      "id": "e0d3bccf7f9e0d44",
+      "text": "Continue editing pages and rebuilding the local copy until satisfied with the changes."
+    },
+    {
+      "type": "markdown",
+      "id": "ff2cfe7d0963cad9",
       "text": "# Commit the Changes Locally"
     },
     {
@@ -350,6 +380,135 @@
       },
       "after": "cb3207a654b2e223",
       "date": 1643990283381
+    },
+    {
+      "type": "edit",
+      "id": "770c93d3d1da9cdf",
+      "item": {
+        "type": "markdown",
+        "id": "770c93d3d1da9cdf",
+        "text": "# Double Check\n"
+      },
+      "date": 1643990390216
+    },
+    {
+      "type": "add",
+      "id": "dfb1277349c4bdb4",
+      "item": {
+        "type": "markdown",
+        "id": "dfb1277349c4bdb4",
+        "text": "//code\n"
+      },
+      "after": "770c93d3d1da9cdf",
+      "date": 1643990395332
+    },
+    {
+      "type": "add",
+      "id": "ff2cfe7d0963cad9",
+      "item": {
+        "type": "markdown",
+        "id": "ff2cfe7d0963cad9",
+        "text": "# Commit the Changes Locally"
+      },
+      "after": "dfb1277349c4bdb4",
+      "date": 1643990396711
+    },
+    {
+      "type": "edit",
+      "id": "dfb1277349c4bdb4",
+      "item": {
+        "type": "paragraph",
+        "id": "dfb1277349c4bdb4",
+        "text": "// code\n"
+      },
+      "date": 1643990433518
+    },
+    {
+      "type": "add",
+      "id": "e88a1af1807c2081",
+      "item": {
+        "type": "paragraph",
+        "id": "e88a1af1807c2081",
+        "text": "We preview the static site locally before publishing."
+      },
+      "after": "770c93d3d1da9cdf",
+      "date": 1643990469163
+    },
+    {
+      "type": "edit",
+      "id": "dfb1277349c4bdb4",
+      "item": {
+        "type": "code",
+        "id": "dfb1277349c4bdb4",
+        "text": "npx http-server ."
+      },
+      "date": 1643990487363
+    },
+    {
+      "type": "add",
+      "id": "4b6d24e09de34f9f",
+      "item": {
+        "type": "paragraph",
+        "id": "4b6d24e09de34f9f",
+        "text": "Visit [http://localhost:8080]."
+      },
+      "after": "e88a1af1807c2081",
+      "date": 1643990513690
+    },
+    {
+      "id": "4b6d24e09de34f9f",
+      "type": "move",
+      "order": [
+        "c0257cb58632efdb",
+        "73519e31da9ad5ed",
+        "dd1d0742b659a151",
+        "ed6a8a4ed1ff6f54",
+        "27ef39e38a4c9155",
+        "770c93d3d1da9cdf",
+        "e88a1af1807c2081",
+        "dfb1277349c4bdb4",
+        "4b6d24e09de34f9f",
+        "ff2cfe7d0963cad9",
+        "476d3a93b5d2f089",
+        "10012ce4972f784b",
+        "8d93a386debe5426",
+        "5686b84dda48392f",
+        "cb3207a654b2e223",
+        "8205a48abfe03e7d"
+      ],
+      "date": 1643990516404
+    },
+    {
+      "type": "edit",
+      "id": "4b6d24e09de34f9f",
+      "item": {
+        "type": "paragraph",
+        "id": "4b6d24e09de34f9f",
+        "text": "Visit [http://localhost:8080 http://localhost:8080]."
+      },
+      "date": 1643990538918
+    },
+    {
+      "type": "add",
+      "id": "a6b5f4248c1d106d",
+      "item": {
+        "type": "paragraph",
+        "id": "a6b5f4248c1d106d",
+        "text": "Type ctrl-c to exit the http-server."
+      },
+      "after": "4b6d24e09de34f9f",
+      "date": 1643990583541
+    },
+    {
+      "type": "add",
+      "id": "e0d3bccf7f9e0d44",
+      "item": {
+        "type": "paragraph",
+        "id": "e0d3bccf7f9e0d44",
+        "text": "Continue editing pages and rebuilding the local copy until satisfied with the changes."
+      },
+      "after": "a6b5f4248c1d106d",
+      "date": 1643990617012
     }
   ]
 }
