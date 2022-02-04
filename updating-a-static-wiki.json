@@ -1,0 +1,319 @@
+{
+  "title": "Updating a Static Wiki",
+  "story": [
+    {
+      "type": "paragraph",
+      "id": "c0257cb58632efdb",
+      "text": "We began by starting from nothing. Those first steps on the path offer many places to stumble. Here we see how it feels to keep going."
+    },
+    {
+      "type": "paragraph",
+      "id": "73519e31da9ad5ed",
+      "text": "See [[From Nothing to Static Hosting]]."
+    },
+    {
+      "type": "paragraph",
+      "id": "dd1d0742b659a151",
+      "text": "Updated some pages. Forked some pages from another wiki."
+    },
+    {
+      "type": "markdown",
+      "id": "ed6a8a4ed1ff6f54",
+      "text": "# Rebuild Our Local Copy"
+    },
+    {
+      "type": "code",
+      "id": "27ef39e38a4c9155",
+      "text": "cd ~/workspace/dobbs/mud.dbbs.co\nnpx wiki-ssg build \\\n  --from ~/.wiki/mud.localhost \\\n  --dest ."
+    },
+    {
+      "type": "markdown",
+      "id": "770c93d3d1da9cdf",
+      "text": "# Commit the Changes Locally"
+    },
+    {
+      "type": "code",
+      "id": "476d3a93b5d2f089",
+      "text": "git add .\ngit commit -am \"update for publishing\""
+    },
+    {
+      "type": "markdown",
+      "id": "10012ce4972f784b",
+      "text": "# Publish to GitHub Pages"
+    },
+    {
+      "type": "code",
+      "id": "8d93a386debe5426",
+      "text": "git push -u origin main"
+    },
+    {
+      "type": "markdown",
+      "id": "5686b84dda48392f",
+      "text": "# Await the Deploy Pipeline"
+    },
+    {
+      "type": "paragraph",
+      "id": "cb3207a654b2e223",
+      "text": "link"
+    }
+  ],
+  "journal": [
+    {
+      "type": "create",
+      "item": {
+        "title": "Updating a Static Wiki",
+        "story": []
+      },
+      "date": 1643989532670
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "c0257cb58632efdb"
+      },
+      "id": "c0257cb58632efdb",
+      "type": "add",
+      "date": 1643989534463
+    },
+    {
+      "type": "edit",
+      "id": "c0257cb58632efdb",
+      "item": {
+        "type": "paragraph",
+        "id": "c0257cb58632efdb",
+        "text": "We began by starting from nothing. Those first steps on the path offer many places to stumble. Here we see how it feels to keep going."
+      },
+      "date": 1643989610348
+    },
+    {
+      "type": "add",
+      "id": "73519e31da9ad5ed",
+      "item": {
+        "type": "paragraph",
+        "id": "73519e31da9ad5ed",
+        "text": "See [[From Nothing to Static Hosting]]."
+      },
+      "after": "c0257cb58632efdb",
+      "date": 1643989621522
+    },
+    {
+      "type": "add",
+      "id": "dd1d0742b659a151",
+      "item": {
+        "type": "paragraph",
+        "id": "dd1d0742b659a151",
+        "text": "Updated some pages. Forked some pages from another wiki."
+      },
+      "after": "73519e31da9ad5ed",
+      "date": 1643989663165
+    },
+    {
+      "type": "add",
+      "id": "ed6a8a4ed1ff6f54",
+      "item": {
+        "type": "factory",
+        "id": "ed6a8a4ed1ff6f54",
+        "text": "Recompile"
+      },
+      "after": "dd1d0742b659a151",
+      "date": 1643989703450
+    },
+    {
+      "type": "edit",
+      "id": "ed6a8a4ed1ff6f54",
+      "item": {
+        "type": "paragraph",
+        "id": "ed6a8a4ed1ff6f54",
+        "text": "Rebuild Our Local Copy"
+      },
+      "date": 1643989742019
+    },
+    {
+      "type": "add",
+      "id": "27ef39e38a4c9155",
+      "item": {
+        "type": "factory",
+        "id": "27ef39e38a4c9155",
+        "text": "//code"
+      },
+      "after": "ed6a8a4ed1ff6f54",
+      "date": 1643989747337
+    },
+    {
+      "type": "add",
+      "id": "770c93d3d1da9cdf",
+      "item": {
+        "type": "paragraph",
+        "id": "770c93d3d1da9cdf",
+        "text": "Commit the Changes Locally"
+      },
+      "after": "27ef39e38a4c9155",
+      "date": 1643989771897
+    },
+    {
+      "type": "add",
+      "id": "476d3a93b5d2f089",
+      "item": {
+        "type": "paragraph",
+        "id": "476d3a93b5d2f089",
+        "text": "//code"
+      },
+      "after": "770c93d3d1da9cdf",
+      "date": 1643989773750
+    },
+    {
+      "type": "add",
+      "id": "10012ce4972f784b",
+      "item": {
+        "type": "paragraph",
+        "id": "10012ce4972f784b",
+        "text": "Publish to GitHub Pages"
+      },
+      "after": "476d3a93b5d2f089",
+      "date": 1643989786321
+    },
+    {
+      "type": "add",
+      "id": "8d93a386debe5426",
+      "item": {
+        "type": "paragraph",
+        "id": "8d93a386debe5426",
+        "text": "//code"
+      },
+      "after": "10012ce4972f784b",
+      "date": 1643989788235
+    },
+    {
+      "type": "add",
+      "id": "5686b84dda48392f",
+      "item": {
+        "type": "paragraph",
+        "id": "5686b84dda48392f",
+        "text": "Await the Deploy Pipeline"
+      },
+      "after": "8d93a386debe5426",
+      "date": 1643989809389
+    },
+    {
+      "type": "add",
+      "id": "cb3207a654b2e223",
+      "item": {
+        "type": "paragraph",
+        "id": "cb3207a654b2e223",
+        "text": "link"
+      },
+      "after": "5686b84dda48392f",
+      "date": 1643989813590
+    },
+    {
+      "type": "edit",
+      "id": "27ef39e38a4c9155",
+      "item": {
+        "type": "code",
+        "id": "27ef39e38a4c9155",
+        "text": "// code "
+      },
+      "date": 1643989833247
+    },
+    {
+      "type": "edit",
+      "id": "ed6a8a4ed1ff6f54",
+      "item": {
+        "type": "markdown",
+        "id": "ed6a8a4ed1ff6f54",
+        "text": "# Rebuild Our Local Copy"
+      },
+      "date": 1643989839849
+    },
+    {
+      "type": "edit",
+      "id": "770c93d3d1da9cdf",
+      "item": {
+        "type": "markdown",
+        "id": "770c93d3d1da9cdf",
+        "text": "# Commit the Changes Locally"
+      },
+      "date": 1643989848315
+    },
+    {
+      "type": "edit",
+      "id": "476d3a93b5d2f089",
+      "item": {
+        "type": "code",
+        "id": "476d3a93b5d2f089",
+        "text": "// code"
+      },
+      "date": 1643989855617
+    },
+    {
+      "type": "edit",
+      "id": "10012ce4972f784b",
+      "item": {
+        "type": "markdown",
+        "id": "10012ce4972f784b",
+        "text": "# Publish to GitHub Pages"
+      },
+      "date": 1643989862297
+    },
+    {
+      "type": "edit",
+      "id": "8d93a386debe5426",
+      "item": {
+        "type": "code",
+        "id": "8d93a386debe5426",
+        "text": "// code"
+      },
+      "date": 1643989867364
+    },
+    {
+      "type": "edit",
+      "id": "5686b84dda48392f",
+      "item": {
+        "type": "markdown",
+        "id": "5686b84dda48392f",
+        "text": "# Await the Deploy Pipeline"
+      },
+      "date": 1643989874297
+    },
+    {
+      "type": "edit",
+      "id": "27ef39e38a4c9155",
+      "item": {
+        "type": "code",
+        "id": "27ef39e38a4c9155",
+        "text": "cd ~/workspace/dobbs/mud.dbbs.co\nnpx wiki-ssg build --from ~/.wiki/mud.localhost \\\n  --dest ."
+      },
+      "date": 1643989897287
+    },
+    {
+      "type": "edit",
+      "id": "27ef39e38a4c9155",
+      "item": {
+        "type": "code",
+        "id": "27ef39e38a4c9155",
+        "text": "cd ~/workspace/dobbs/mud.dbbs.co\nnpx wiki-ssg build \\\n  --from ~/.wiki/mud.localhost \\\n  --dest ."
+      },
+      "date": 1643989906289
+    },
+    {
+      "type": "edit",
+      "id": "476d3a93b5d2f089",
+      "item": {
+        "type": "code",
+        "id": "476d3a93b5d2f089",
+        "text": "git add .\ngit commit -am \"update for publishing\""
+      },
+      "date": 1643989948779
+    },
+    {
+      "type": "edit",
+      "id": "8d93a386debe5426",
+      "item": {
+        "type": "code",
+        "id": "8d93a386debe5426",
+        "text": "git push -u origin main"
+      },
+      "date": 1643989957520
+    }
+  ]
+}

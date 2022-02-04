@@ -1,0 +1,584 @@
+{
+  "title": "From Nothing to Static Hosting",
+  "story": [
+    {
+      "type": "paragraph",
+      "id": "b56b354304a2cbf5",
+      "text": "Here we record the steps taken to go from nothing* to a statically published wiki site. We're writing these notes as we take each few steps as a way to discover the actual complexity of the process."
+    },
+    {
+      "type": "paragraph",
+      "id": "e266a01217b3c90d",
+      "text": "* nothing is an exaggeration. We did start within a fully-formed universe. We also make a few parenthetical notes along the way when we notice other prerequisites."
+    },
+    {
+      "type": "markdown",
+      "id": "e23ed35b53c596f8",
+      "text": "# Created a Local Wiki"
+    },
+    {
+      "type": "paragraph",
+      "id": "59668bd1f1bb6432",
+      "text": "Visited [http://mud.localhost http://mud.localhost]."
+    },
+    {
+      "type": "paragraph",
+      "id": "0b2cc53853445280",
+      "text": "(Reveals that I already have an operational local farm.)"
+    },
+    {
+      "type": "paragraph",
+      "id": "08d75fdd46dddb19",
+      "text": "Found my way to [[About Flagmatic Plugin]]."
+    },
+    {
+      "type": "paragraph",
+      "id": "349dd72d9c525c62",
+      "text": "Chose a muddy sort of flag for this site."
+    },
+    {
+      "type": "reference",
+      "id": "a0c55d123946d3a7",
+      "text": "Dragged Ward's page to my browser tab and claimed a copy of my own.",
+      "site": "ward.mud.asia.wiki.org",
+      "slug": "muddy-thinking",
+      "title": "Muddy Thinking"
+    },
+    {
+      "type": "paragraph",
+      "id": "0469748252c21aa8",
+      "text": "Added the page about me so other participants can discover which parts of this exploration I contribute."
+    },
+    {
+      "type": "markdown",
+      "id": "2d3718ebf2c90e18",
+      "text": "# Created a Folder for Git"
+    },
+    {
+      "type": "paragraph",
+      "id": "bd6b9b5ed435c330",
+      "text": "Did a few things in iTerm. 1) create a folder where I'll manage a git repository. 2) use wiki-ssg to generate a static site from mud.localhost."
+    },
+    {
+      "type": "code",
+      "id": "17f2caba3b78977e",
+      "text": "mkdir ~/workspace/dobbs/mud.dbbs.co  #chose a domain name\ncd ~/workspace/dobbs/mud.dbbs.co\nnpx wiki-ssg build --from ~/.wiki/mud.localhost \\\n  --dest .\ngit init .\ngit add .\ngit commit -am \"begin the mud wrestling\""
+    },
+    {
+      "type": "markdown",
+      "id": "3b2b0e027dc110cc",
+      "text": "# Created a New GitHub Repo"
+    },
+    {
+      "type": "paragraph",
+      "id": "b953e6c98d6ff33f",
+      "text": "via [https://github.com/new https://github.com/new]"
+    },
+    {
+      "type": "paragraph",
+      "id": "835dd40a8120bdbf",
+      "text": "(Reveals that I already have an account on github:  [https://github.com/dobbs https://github.com/dobbs])"
+    },
+    {
+      "type": "paragraph",
+      "id": "cee33108810c1183",
+      "text": "Named the repo to match the name I've chosen."
+    },
+    {
+      "type": "paragraph",
+      "id": "53d62e14ffd83ade",
+      "text": "Copied some lines from github to connect my local folder:"
+    },
+    {
+      "type": "code",
+      "id": "ac282adbabb9de9f",
+      "text": "git remote add origin \\\n    git@github.com:dobbs/mud.dbbs.co.git\ngit branch -M main\ngit push -u origin main"
+    },
+    {
+      "type": "markdown",
+      "id": "7d91cb09b7239c84",
+      "text": "# Created a DNS Record"
+    },
+    {
+      "type": "paragraph",
+      "id": "82012fe95255e2f0",
+      "text": "Visited digital ocean to create a CNAME record for the new wiki: [https://cloud.digitalocean.com https://cloud.digitalocean.com]"
+    },
+    {
+      "type": "code",
+      "id": "918bb80d4d865aa4",
+      "text": "mud.dbbs.co.   1800   IN   CNAME   dobbs.github.io."
+    },
+    {
+      "type": "paragraph",
+      "id": "8c4e32a26c27ab3d",
+      "text": "(Reveals that I already lease the dbbs.co domain name, that I manage that name with digital ocean, that I know how to use their DNS forms, and that I know github's naming conventions and support for custom addresses by creating a CNAME to dobbs.github.io)"
+    },
+    {
+      "type": "markdown",
+      "id": "056c345922efd722",
+      "text": "# Configured GitHub Pages"
+    },
+    {
+      "type": "paragraph",
+      "id": "ac206ad51b43667c",
+      "text": "Setup pages in the github repo: [https://github.com/dobbs/mud.dbbs.co/settings/pages https://github.com/dobbs/mud.dbbs.co/settings/pages]"
+    },
+    {
+      "type": "paragraph",
+      "id": "87535be92d257857",
+      "text": "Changed the source to use the main branch and saved. Then watched the github action in action: [https://github.com/dobbs/mud.dbbs.co/actions/runs/1795661118 https://github.com/dobbs/mud.dbbs.co/actions/runs/1795661118]"
+    },
+    {
+      "type": "paragraph",
+      "id": "021b6a3eb662db6f",
+      "text": "When that build was complete, I returned to the pages settings: [https://github.com/dobbs/mud.dbbs.co/settings/pages https://github.com/dobbs/mud.dbbs.co/settings/pages] to configure the custom domain name."
+    },
+    {
+      "type": "paragraph",
+      "id": "2d5d4632d1890a0a",
+      "text": "I watched github build and deploy that change: [https://github.com/dobbs/mud.dbbs.co/actions/runs/1795678827 https://github.com/dobbs/mud.dbbs.co/actions/runs/1795678827]"
+    },
+    {
+      "type": "paragraph",
+      "id": "72109221df2da1af",
+      "text": "Then visited the site myself to confirm success. [http://mud.dbbs.co mud.dbbs.co]"
+    },
+    {
+      "type": "paragraph",
+      "id": "ac403884d47936d2",
+      "text": "Next: [[Updating a Static Wiki]]"
+    }
+  ],
+  "journal": [
+    {
+      "type": "create",
+      "item": {
+        "title": "From Nothing to Static Hosting",
+        "story": []
+      },
+      "date": 1643988575771
+    },
+    {
+      "id": "b56b354304a2cbf5",
+      "type": "add",
+      "item": {
+        "type": "paragraph",
+        "id": "b56b354304a2cbf5",
+        "text": "Here we record the steps taken to go from nothing to a statically published wiki site. We're writing these notes as we take each few steps as a way to discover if this process is still too complicated."
+      },
+      "date": 1643988580726
+    },
+    {
+      "id": "59668bd1f1bb6432",
+      "type": "add",
+      "item": {
+        "type": "paragraph",
+        "id": "59668bd1f1bb6432",
+        "text": "Visited [http://mud.localhost http://mud.localhost]."
+      },
+      "after": "b56b354304a2cbf5",
+      "date": 1643988585783
+    },
+    {
+      "id": "0b2cc53853445280",
+      "type": "add",
+      "item": {
+        "type": "paragraph",
+        "id": "0b2cc53853445280",
+        "text": "(Reveals that I already have an operational local farm.)"
+      },
+      "after": "59668bd1f1bb6432",
+      "date": 1643988591539
+    },
+    {
+      "id": "08d75fdd46dddb19",
+      "type": "add",
+      "item": {
+        "type": "paragraph",
+        "id": "08d75fdd46dddb19",
+        "text": "Found my way to [[About Flagmatic Plugin]]."
+      },
+      "after": "0b2cc53853445280",
+      "date": 1643988597369
+    },
+    {
+      "id": "349dd72d9c525c62",
+      "type": "add",
+      "item": {
+        "type": "paragraph",
+        "id": "349dd72d9c525c62",
+        "text": "Chose a muddy sort of flag for this site."
+      },
+      "after": "08d75fdd46dddb19",
+      "date": 1643988600682
+    },
+    {
+      "id": "a0c55d123946d3a7",
+      "type": "add",
+      "item": {
+        "type": "reference",
+        "id": "a0c55d123946d3a7",
+        "text": "Dragged Ward's page to my browser tab and claimed a copy of my own.",
+        "site": "ward.mud.asia.wiki.org",
+        "slug": "muddy-thinking",
+        "title": "Muddy Thinking"
+      },
+      "after": "349dd72d9c525c62",
+      "date": 1643988604492
+    },
+    {
+      "id": "0469748252c21aa8",
+      "type": "add",
+      "item": {
+        "type": "paragraph",
+        "id": "0469748252c21aa8",
+        "text": "Added the page about me so other participants can discover which parts of this exploration I contribute."
+      },
+      "after": "a0c55d123946d3a7",
+      "date": 1643988607984
+    },
+    {
+      "id": "bd6b9b5ed435c330",
+      "type": "add",
+      "item": {
+        "type": "paragraph",
+        "id": "bd6b9b5ed435c330",
+        "text": "Did a few things in iTerm. 1) create a folder where I'll manage a git repository. 2) use wiki-ssg to generate a static site from mud.localhost."
+      },
+      "after": "0469748252c21aa8",
+      "date": 1643988614716
+    },
+    {
+      "id": "17f2caba3b78977e",
+      "type": "add",
+      "item": {
+        "type": "code",
+        "id": "17f2caba3b78977e",
+        "text": "mkdir ~/workspace/dobbs/mud.dbbs.co  #chose a domain name\ncd ~/workspace/dobbs/mud.dbbs.co\nnpx wiki-ssg build --from ~/.wiki/mud.localhost \\\n  --dest .\ngit init .\ngit add .\ngit commit -am \"begin the mud wrestling\""
+      },
+      "after": "bd6b9b5ed435c330",
+      "date": 1643988617773
+    },
+    {
+      "id": "3b2b0e027dc110cc",
+      "type": "add",
+      "item": {
+        "type": "paragraph",
+        "id": "3b2b0e027dc110cc",
+        "text": "Created a new github to repo via [https://github.com/new https://github.com/new]"
+      },
+      "after": "17f2caba3b78977e",
+      "date": 1643988622250
+    },
+    {
+      "id": "835dd40a8120bdbf",
+      "type": "add",
+      "item": {
+        "type": "paragraph",
+        "id": "835dd40a8120bdbf",
+        "text": "(Reveals that I already have an account on github:  [https://github.com/dobbs https://github.com/dobbs])"
+      },
+      "after": "3b2b0e027dc110cc",
+      "date": 1643988625513
+    },
+    {
+      "id": "cee33108810c1183",
+      "type": "add",
+      "item": {
+        "type": "paragraph",
+        "id": "cee33108810c1183",
+        "text": "Named the repo to match the name I've chosen."
+      },
+      "after": "835dd40a8120bdbf",
+      "date": 1643988629513
+    },
+    {
+      "id": "53d62e14ffd83ade",
+      "type": "add",
+      "item": {
+        "type": "paragraph",
+        "id": "53d62e14ffd83ade",
+        "text": "Copied some lines from github to connect my local folder:"
+      },
+      "after": "cee33108810c1183",
+      "date": 1643988633090
+    },
+    {
+      "id": "ac282adbabb9de9f",
+      "type": "add",
+      "item": {
+        "type": "code",
+        "id": "ac282adbabb9de9f",
+        "text": "git remote add origin \\\n    git@github.com:dobbs/mud.dbbs.co.git\ngit branch -M main\ngit push -u origin main"
+      },
+      "after": "53d62e14ffd83ade",
+      "date": 1643988637491
+    },
+    {
+      "id": "82012fe95255e2f0",
+      "type": "add",
+      "item": {
+        "type": "paragraph",
+        "id": "82012fe95255e2f0",
+        "text": "Visit digital ocean to create a CNAME record for the new wiki: [https://cloud.digitalocean.com https://cloud.digitalocean.com]"
+      },
+      "after": "ac282adbabb9de9f",
+      "date": 1643988641990
+    },
+    {
+      "id": "918bb80d4d865aa4",
+      "type": "add",
+      "item": {
+        "type": "code",
+        "id": "918bb80d4d865aa4",
+        "text": "mud.dbbs.co.   1800   IN   CNAME   dobbs.github.io."
+      },
+      "after": "82012fe95255e2f0",
+      "date": 1643988644986
+    },
+    {
+      "id": "8c4e32a26c27ab3d",
+      "type": "add",
+      "item": {
+        "type": "paragraph",
+        "id": "8c4e32a26c27ab3d",
+        "text": "(Reveals that I already lease the dbbs.co domain name, that I manage that name with digital ocean, that I know how to use their DNS forms, and that I know github's naming conventions and support for custom addresses by creating a CNAME to dobbs.github.io)"
+      },
+      "after": "918bb80d4d865aa4",
+      "date": 1643988650166
+    },
+    {
+      "id": "ac206ad51b43667c",
+      "type": "add",
+      "item": {
+        "type": "paragraph",
+        "id": "ac206ad51b43667c",
+        "text": "Setup pages in the github repo: [https://github.com/dobbs/mud.dbbs.co/settings/pages https://github.com/dobbs/mud.dbbs.co/settings/pages]"
+      },
+      "after": "8c4e32a26c27ab3d",
+      "date": 1643988656250
+    },
+    {
+      "id": "87535be92d257857",
+      "type": "add",
+      "item": {
+        "type": "paragraph",
+        "id": "87535be92d257857",
+        "text": "Changed the source to use the main branch and saved. Then watched the github action in action: [https://github.com/dobbs/mud.dbbs.co/actions/runs/1795661118 https://github.com/dobbs/mud.dbbs.co/actions/runs/1795661118]"
+      },
+      "after": "ac206ad51b43667c",
+      "date": 1643988658763
+    },
+    {
+      "id": "021b6a3eb662db6f",
+      "type": "add",
+      "item": {
+        "type": "paragraph",
+        "id": "021b6a3eb662db6f",
+        "text": "When that build was complete, I returned to the pages settings: [https://github.com/dobbs/mud.dbbs.co/settings/pages https://github.com/dobbs/mud.dbbs.co/settings/pages] to configure the custom domain name."
+      },
+      "after": "87535be92d257857",
+      "date": 1643988663154
+    },
+    {
+      "id": "2d5d4632d1890a0a",
+      "type": "add",
+      "item": {
+        "type": "paragraph",
+        "id": "2d5d4632d1890a0a",
+        "text": "I watched github build and deploy that change: [https://github.com/dobbs/mud.dbbs.co/actions/runs/1795678827 https://github.com/dobbs/mud.dbbs.co/actions/runs/1795678827]"
+      },
+      "after": "021b6a3eb662db6f",
+      "date": 1643988665948
+    },
+    {
+      "id": "72109221df2da1af",
+      "type": "add",
+      "item": {
+        "type": "paragraph",
+        "id": "72109221df2da1af",
+        "text": "Then visited the site myself to confirm success. [http://mud.dbbs.co mud.dbbs.co]"
+      },
+      "after": "2d5d4632d1890a0a",
+      "date": 1643988669174
+    },
+    {
+      "type": "edit",
+      "id": "b56b354304a2cbf5",
+      "item": {
+        "type": "paragraph",
+        "id": "b56b354304a2cbf5",
+        "text": "Here we record the steps taken to go from nothing to a statically published wiki site. We're writing these notes as we take each few steps as a way to discover the actual complexity of the process."
+      },
+      "date": 1643988708321
+    },
+    {
+      "type": "edit",
+      "id": "b56b354304a2cbf5",
+      "item": {
+        "type": "paragraph",
+        "id": "b56b354304a2cbf5",
+        "text": "Here we record the steps taken to go from nothing* to a statically published wiki site. We're writing these notes as we take each few steps as a way to discover the actual complexity of the process."
+      },
+      "date": 1643988779203
+    },
+    {
+      "type": "add",
+      "id": "e266a01217b3c90d",
+      "item": {
+        "type": "paragraph",
+        "id": "e266a01217b3c90d",
+        "text": "* nothing is an exaggeration. We did start within a fully-formed universe. We also make a few parenthetical notes along the way when we notice other prerequisites."
+      },
+      "after": "b56b354304a2cbf5",
+      "date": 1643988848704
+    },
+    {
+      "type": "add",
+      "id": "e23ed35b53c596f8",
+      "item": {
+        "type": "factory",
+        "id": "e23ed35b53c596f8",
+        "text": "create a site"
+      },
+      "after": "e266a01217b3c90d",
+      "date": 1643988880110
+    },
+    {
+      "type": "edit",
+      "id": "e23ed35b53c596f8",
+      "item": {
+        "type": "markdown",
+        "id": "e23ed35b53c596f8",
+        "text": "# Created a Local Wiki"
+      },
+      "date": 1643988900699
+    },
+    {
+      "type": "add",
+      "id": "2d3718ebf2c90e18",
+      "item": {
+        "type": "factory",
+        "id": "2d3718ebf2c90e18",
+        "text": "Create a Folder for Git"
+      },
+      "after": "0469748252c21aa8",
+      "date": 1643988937712
+    },
+    {
+      "type": "edit",
+      "id": "2d3718ebf2c90e18",
+      "item": {
+        "type": "markdown",
+        "id": "2d3718ebf2c90e18",
+        "text": "# Create a Folder for Git"
+      },
+      "date": 1643988942085
+    },
+    {
+      "type": "edit",
+      "id": "3b2b0e027dc110cc",
+      "item": {
+        "type": "paragraph",
+        "id": "3b2b0e027dc110cc",
+        "text": "Created a new github repo"
+      },
+      "date": 1643988989672
+    },
+    {
+      "type": "add",
+      "id": "b953e6c98d6ff33f",
+      "item": {
+        "type": "paragraph",
+        "id": "b953e6c98d6ff33f",
+        "text": "via [https://github.com/new https://github.com/new]"
+      },
+      "after": "3b2b0e027dc110cc",
+      "date": 1643988990855
+    },
+    {
+      "type": "edit",
+      "id": "3b2b0e027dc110cc",
+      "item": {
+        "type": "markdown",
+        "id": "3b2b0e027dc110cc",
+        "text": "# Created a New GitHub Repo"
+      },
+      "date": 1643989005215
+    },
+    {
+      "type": "edit",
+      "id": "2d3718ebf2c90e18",
+      "item": {
+        "type": "markdown",
+        "id": "2d3718ebf2c90e18",
+        "text": "# Created a Folder for Git"
+      },
+      "date": 1643989009199
+    },
+    {
+      "type": "add",
+      "id": "7d91cb09b7239c84",
+      "item": {
+        "type": "factory",
+        "id": "7d91cb09b7239c84",
+        "text": "Created a CNAME"
+      },
+      "after": "ac282adbabb9de9f",
+      "date": 1643989054077
+    },
+    {
+      "type": "edit",
+      "id": "7d91cb09b7239c84",
+      "item": {
+        "type": "markdown",
+        "id": "7d91cb09b7239c84",
+        "text": "# Created a DNS Record"
+      },
+      "date": 1643989069677
+    },
+    {
+      "type": "edit",
+      "id": "82012fe95255e2f0",
+      "item": {
+        "type": "paragraph",
+        "id": "82012fe95255e2f0",
+        "text": "Visited digital ocean to create a CNAME record for the new wiki: [https://cloud.digitalocean.com https://cloud.digitalocean.com]"
+      },
+      "date": 1643989083790
+    },
+    {
+      "type": "add",
+      "id": "056c345922efd722",
+      "item": {
+        "type": "factory",
+        "id": "056c345922efd722",
+        "text": "Configured GitHub Pages"
+      },
+      "after": "8c4e32a26c27ab3d",
+      "date": 1643989102971
+    },
+    {
+      "type": "edit",
+      "id": "056c345922efd722",
+      "item": {
+        "type": "markdown",
+        "id": "056c345922efd722",
+        "text": "# Configured GitHub Pages"
+      },
+      "date": 1643989106578
+    },
+    {
+      "type": "add",
+      "id": "ac403884d47936d2",
+      "item": {
+        "type": "paragraph",
+        "id": "ac403884d47936d2",
+        "text": "Next: [[Updating a Static Wiki]]"
+      },
+      "after": "72109221df2da1af",
+      "date": 1643989529385
+    }
+  ]
+}
