@@ -145,6 +145,21 @@
       "text": "Then visited the site myself to confirm success. [http://mud.dbbs.co mud.dbbs.co]"
     },
     {
+      "type": "markdown",
+      "id": "b8305c2d93f5decc",
+      "text": "# Synced Local Repo with GitHub"
+    },
+    {
+      "type": "paragraph",
+      "id": "2bc947f8fd3ecf5e",
+      "text": "When I configured the CNAME in GitHub, a commit was added to the repo up in the cloud. I needed to synchronize the local repo with that change."
+    },
+    {
+      "type": "factory",
+      "id": "4515a847bd270e97",
+      "text": "git pull"
+    },
+    {
       "type": "paragraph",
       "id": "ac403884d47936d2",
       "text": "Next: [[Updating a Static Wiki]]"
@@ -579,6 +594,88 @@
       },
       "after": "72109221df2da1af",
       "date": 1643989529385
+    },
+    {
+      "type": "add",
+      "id": "b8305c2d93f5decc",
+      "item": {
+        "type": "paragraph",
+        "id": "b8305c2d93f5decc",
+        "text": "Synced Local Repo with GitHub"
+      },
+      "after": "72109221df2da1af",
+      "date": 1643990059339
+    },
+    {
+      "type": "add",
+      "id": "4515a847bd270e97",
+      "item": {
+        "type": "factory",
+        "id": "4515a847bd270e97",
+        "text": "git pull"
+      },
+      "after": "b8305c2d93f5decc",
+      "date": 1643990067745
+    },
+    {
+      "type": "edit",
+      "id": "b8305c2d93f5decc",
+      "item": {
+        "type": "markdown",
+        "id": "b8305c2d93f5decc",
+        "text": "# Synced Local Repo with GitHub"
+      },
+      "date": 1643990095432
+    },
+    {
+      "type": "add",
+      "id": "2bc947f8fd3ecf5e",
+      "item": {
+        "type": "paragraph",
+        "id": "2bc947f8fd3ecf5e",
+        "text": "When I configured the CNAME in GitHub, a commit was added to the repo up in the cloud. I needed to synchronize the local repo with that change."
+      },
+      "after": "4515a847bd270e97",
+      "date": 1643990165227
+    },
+    {
+      "id": "2bc947f8fd3ecf5e",
+      "type": "move",
+      "order": [
+        "b56b354304a2cbf5",
+        "e266a01217b3c90d",
+        "e23ed35b53c596f8",
+        "59668bd1f1bb6432",
+        "0b2cc53853445280",
+        "08d75fdd46dddb19",
+        "349dd72d9c525c62",
+        "a0c55d123946d3a7",
+        "0469748252c21aa8",
+        "2d3718ebf2c90e18",
+        "bd6b9b5ed435c330",
+        "17f2caba3b78977e",
+        "3b2b0e027dc110cc",
+        "b953e6c98d6ff33f",
+        "835dd40a8120bdbf",
+        "cee33108810c1183",
+        "53d62e14ffd83ade",
+        "ac282adbabb9de9f",
+        "7d91cb09b7239c84",
+        "82012fe95255e2f0",
+        "918bb80d4d865aa4",
+        "8c4e32a26c27ab3d",
+        "056c345922efd722",
+        "ac206ad51b43667c",
+        "87535be92d257857",
+        "021b6a3eb662db6f",
+        "2d5d4632d1890a0a",
+        "72109221df2da1af",
+        "b8305c2d93f5decc",
+        "2bc947f8fd3ecf5e",
+        "4515a847bd270e97",
+        "ac403884d47936d2"
+      ],
+      "date": 1643990167784
     }
   ]
 }

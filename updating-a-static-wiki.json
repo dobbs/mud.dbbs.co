@@ -54,7 +54,12 @@
     {
       "type": "paragraph",
       "id": "cb3207a654b2e223",
-      "text": "link"
+      "text": "Watch the action: [https://github.com/dobbs/mud.dbbs.co/actions https://github.com/dobbs/mud.dbbs.co/actions]"
+    },
+    {
+      "type": "paragraph",
+      "id": "8205a48abfe03e7d",
+      "text": "See the results [http://mud.dbbs.co http://mud.dbbs.co]"
     }
   ],
   "journal": [
@@ -314,6 +319,37 @@
         "text": "git push -u origin main"
       },
       "date": 1643989957520
+    },
+    {
+      "type": "edit",
+      "id": "cb3207a654b2e223",
+      "item": {
+        "type": "paragraph",
+        "id": "cb3207a654b2e223",
+        "text": "Visit [https://github.com/dobbs/mud.dbbs.co/actions https://github.com/dobbs/mud.dbbs.co/actions]"
+      },
+      "date": 1643990214225
+    },
+    {
+      "type": "edit",
+      "id": "cb3207a654b2e223",
+      "item": {
+        "type": "paragraph",
+        "id": "cb3207a654b2e223",
+        "text": "Watch the action: [https://github.com/dobbs/mud.dbbs.co/actions https://github.com/dobbs/mud.dbbs.co/actions]"
+      },
+      "date": 1643990260605
+    },
+    {
+      "type": "add",
+      "id": "8205a48abfe03e7d",
+      "item": {
+        "type": "paragraph",
+        "id": "8205a48abfe03e7d",
+        "text": "See the results [http://mud.dbbs.co http://mud.dbbs.co]"
+      },
+      "after": "cb3207a654b2e223",
+      "date": 1643990283381
     }
   ]
 }
